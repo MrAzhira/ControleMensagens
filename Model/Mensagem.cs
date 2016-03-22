@@ -12,6 +12,6 @@ namespace Model
         public Usuario Remetente { get; set; }
         public Usuario Destinatario { get; set; }
         public String Assunto { get; set; }
-        public String Mensagem { get; set; }
+        public String CorpoMensagem { get; set; }
     }
 }

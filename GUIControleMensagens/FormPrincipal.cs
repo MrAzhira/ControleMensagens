@@ -13,6 +13,8 @@ namespace GUIControleMensagens
     public partial class FormPrincipal : Form
     {
         private FormEnvioMensagem formEnvioMensagem;
+        private FormUsuario formUsuario;
+        private FormLeituraMensagem formLeitura;
         public FormPrincipal()
         {
             InitializeComponent();
@@ -25,6 +27,24 @@ namespace GUIControleMensagens
                 formEnvioMensagem = new FormEnvioMensagem();
             }
             formEnvioMensagem.ShowDialog(this);
+        }
+
+        private void usuáriosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (formUsuario == null)
+            {
+                formUsuario = new FormUsuario();
+            }
+            formUsuario.ShowDialog(this);
+        }
+
+        private void leituraDeMensagensToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (formLeitura == null)
+            {
+                formLeitura = new FormLeituraMensagem();
+            }
+            formUsuario.ShowDialog(this);
         }
     }
 }

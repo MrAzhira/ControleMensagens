@@ -40,6 +40,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ADODBConnection.cs" />
+    <Compile Include="ControllerMensagem.cs" />
     <Compile Include="ControllerUsuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

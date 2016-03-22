@@ -38,6 +38,8 @@
             this.richTextBoxMensagem = new System.Windows.Forms.RichTextBox();
             this.buttonNovaMensagem = new System.Windows.Forms.Button();
             this.buttonEnviarMensagem = new System.Windows.Forms.Button();
+            this.idremetente = new System.Windows.Forms.TextBox();
+            this.iddestino = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -53,7 +55,7 @@
             // textBoxRemetente
             // 
             this.textBoxRemetente.Location = new System.Drawing.Point(82, 20);
-            this.textBoxRemetente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxRemetente.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxRemetente.Name = "textBoxRemetente";
             this.textBoxRemetente.Size = new System.Drawing.Size(306, 20);
             this.textBoxRemetente.TabIndex = 1;
@@ -71,7 +73,7 @@
             // textBoxDestinatario
             // 
             this.textBoxDestinatario.Location = new System.Drawing.Point(82, 50);
-            this.textBoxDestinatario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxDestinatario.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxDestinatario.Name = "textBoxDestinatario";
             this.textBoxDestinatario.Size = new System.Drawing.Size(306, 20);
             this.textBoxDestinatario.TabIndex = 3;
@@ -89,7 +91,7 @@
             // textBoxAssunto
             // 
             this.textBoxAssunto.Location = new System.Drawing.Point(82, 76);
-            this.textBoxAssunto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxAssunto.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxAssunto.Name = "textBoxAssunto";
             this.textBoxAssunto.Size = new System.Drawing.Size(306, 20);
             this.textBoxAssunto.TabIndex = 5;
@@ -107,7 +109,7 @@
             // richTextBoxMensagem
             // 
             this.richTextBoxMensagem.Location = new System.Drawing.Point(82, 109);
-            this.richTextBoxMensagem.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.richTextBoxMensagem.Margin = new System.Windows.Forms.Padding(2);
             this.richTextBoxMensagem.Name = "richTextBoxMensagem";
             this.richTextBoxMensagem.Size = new System.Drawing.Size(306, 119);
             this.richTextBoxMensagem.TabIndex = 7;
@@ -116,7 +118,7 @@
             // buttonNovaMensagem
             // 
             this.buttonNovaMensagem.Location = new System.Drawing.Point(16, 232);
-            this.buttonNovaMensagem.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonNovaMensagem.Margin = new System.Windows.Forms.Padding(2);
             this.buttonNovaMensagem.Name = "buttonNovaMensagem";
             this.buttonNovaMensagem.Size = new System.Drawing.Size(118, 36);
             this.buttonNovaMensagem.TabIndex = 8;
@@ -127,7 +129,7 @@
             // buttonEnviarMensagem
             // 
             this.buttonEnviarMensagem.Location = new System.Drawing.Point(139, 232);
-            this.buttonEnviarMensagem.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonEnviarMensagem.Margin = new System.Windows.Forms.Padding(2);
             this.buttonEnviarMensagem.Name = "buttonEnviarMensagem";
             this.buttonEnviarMensagem.Size = new System.Drawing.Size(118, 36);
             this.buttonEnviarMensagem.TabIndex = 9;
@@ -135,11 +137,29 @@
             this.buttonEnviarMensagem.UseVisualStyleBackColor = true;
             this.buttonEnviarMensagem.Click += new System.EventHandler(this.buttonEnviarMensagem_Click);
             // 
+            // idremetente
+            // 
+            this.idremetente.Location = new System.Drawing.Point(393, 20);
+            this.idremetente.Name = "idremetente";
+            this.idremetente.Size = new System.Drawing.Size(17, 20);
+            this.idremetente.TabIndex = 10;
+            this.idremetente.Visible = false;
+            // 
+            // iddestino
+            // 
+            this.iddestino.Location = new System.Drawing.Point(393, 49);
+            this.iddestino.Name = "iddestino";
+            this.iddestino.Size = new System.Drawing.Size(17, 20);
+            this.iddestino.TabIndex = 11;
+            this.iddestino.Visible = false;
+            // 
             // FormEnvioMensagem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(422, 278);
+            this.Controls.Add(this.iddestino);
+            this.Controls.Add(this.idremetente);
             this.Controls.Add(this.buttonEnviarMensagem);
             this.Controls.Add(this.buttonNovaMensagem);
             this.Controls.Add(this.richTextBoxMensagem);
@@ -150,7 +170,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBoxRemetente);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormEnvioMensagem";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Envio de Mensagens";
@@ -171,5 +191,7 @@
         private System.Windows.Forms.RichTextBox richTextBoxMensagem;
         private System.Windows.Forms.Button buttonNovaMensagem;
         private System.Windows.Forms.Button buttonEnviarMensagem;
+        private System.Windows.Forms.TextBox idremetente;
+        private System.Windows.Forms.TextBox iddestino;
     }
 }
