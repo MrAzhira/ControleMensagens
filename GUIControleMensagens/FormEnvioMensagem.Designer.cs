@@ -43,91 +43,103 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 25);
+            this.label1.Location = new System.Drawing.Point(10, 20);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(81, 17);
+            this.label1.Size = new System.Drawing.Size(62, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Remetente:";
             // 
             // textBoxRemetente
             // 
-            this.textBoxRemetente.Location = new System.Drawing.Point(110, 25);
+            this.textBoxRemetente.Location = new System.Drawing.Point(82, 20);
+            this.textBoxRemetente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxRemetente.Name = "textBoxRemetente";
-            this.textBoxRemetente.Size = new System.Drawing.Size(406, 22);
+            this.textBoxRemetente.Size = new System.Drawing.Size(306, 20);
             this.textBoxRemetente.TabIndex = 1;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(13, 64);
+            this.label2.Location = new System.Drawing.Point(10, 52);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(88, 17);
+            this.label2.Size = new System.Drawing.Size(66, 13);
             this.label2.TabIndex = 2;
             this.label2.Text = "Destinatário:";
             // 
             // textBoxDestinatario
             // 
-            this.textBoxDestinatario.Location = new System.Drawing.Point(110, 61);
+            this.textBoxDestinatario.Location = new System.Drawing.Point(82, 50);
+            this.textBoxDestinatario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxDestinatario.Name = "textBoxDestinatario";
-            this.textBoxDestinatario.Size = new System.Drawing.Size(406, 22);
+            this.textBoxDestinatario.Size = new System.Drawing.Size(306, 20);
             this.textBoxDestinatario.TabIndex = 3;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(16, 99);
+            this.label3.Location = new System.Drawing.Point(12, 80);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(63, 17);
+            this.label3.Size = new System.Drawing.Size(48, 13);
             this.label3.TabIndex = 4;
             this.label3.Text = "Assunto:";
             // 
             // textBoxAssunto
             // 
-            this.textBoxAssunto.Location = new System.Drawing.Point(110, 93);
+            this.textBoxAssunto.Location = new System.Drawing.Point(82, 76);
+            this.textBoxAssunto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxAssunto.Name = "textBoxAssunto";
-            this.textBoxAssunto.Size = new System.Drawing.Size(406, 22);
+            this.textBoxAssunto.Size = new System.Drawing.Size(306, 20);
             this.textBoxAssunto.TabIndex = 5;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(19, 134);
+            this.label4.Location = new System.Drawing.Point(14, 109);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(77, 17);
+            this.label4.Size = new System.Drawing.Size(59, 13);
             this.label4.TabIndex = 6;
             this.label4.Text = "Mensagem";
             // 
             // richTextBoxMensagem
             // 
-            this.richTextBoxMensagem.Location = new System.Drawing.Point(110, 134);
+            this.richTextBoxMensagem.Location = new System.Drawing.Point(82, 109);
+            this.richTextBoxMensagem.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.richTextBoxMensagem.Name = "richTextBoxMensagem";
-            this.richTextBoxMensagem.Size = new System.Drawing.Size(406, 146);
+            this.richTextBoxMensagem.Size = new System.Drawing.Size(306, 119);
             this.richTextBoxMensagem.TabIndex = 7;
             this.richTextBoxMensagem.Text = "";
             // 
             // buttonNovaMensagem
             // 
-            this.buttonNovaMensagem.Location = new System.Drawing.Point(22, 286);
+            this.buttonNovaMensagem.Location = new System.Drawing.Point(16, 232);
+            this.buttonNovaMensagem.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonNovaMensagem.Name = "buttonNovaMensagem";
-            this.buttonNovaMensagem.Size = new System.Drawing.Size(157, 44);
+            this.buttonNovaMensagem.Size = new System.Drawing.Size(118, 36);
             this.buttonNovaMensagem.TabIndex = 8;
             this.buttonNovaMensagem.Text = "Nova Mensagem";
             this.buttonNovaMensagem.UseVisualStyleBackColor = true;
+            this.buttonNovaMensagem.Click += new System.EventHandler(this.buttonNovaMensagem_Click);
             // 
             // buttonEnviarMensagem
             // 
-            this.buttonEnviarMensagem.Location = new System.Drawing.Point(185, 286);
+            this.buttonEnviarMensagem.Location = new System.Drawing.Point(139, 232);
+            this.buttonEnviarMensagem.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonEnviarMensagem.Name = "buttonEnviarMensagem";
-            this.buttonEnviarMensagem.Size = new System.Drawing.Size(157, 44);
+            this.buttonEnviarMensagem.Size = new System.Drawing.Size(118, 36);
             this.buttonEnviarMensagem.TabIndex = 9;
             this.buttonEnviarMensagem.Text = "Enviar Mensagem";
             this.buttonEnviarMensagem.UseVisualStyleBackColor = true;
+            this.buttonEnviarMensagem.Click += new System.EventHandler(this.buttonEnviarMensagem_Click);
             // 
             // FormEnvioMensagem
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(563, 342);
+            this.ClientSize = new System.Drawing.Size(422, 278);
             this.Controls.Add(this.buttonEnviarMensagem);
             this.Controls.Add(this.buttonNovaMensagem);
             this.Controls.Add(this.richTextBoxMensagem);
@@ -138,6 +150,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBoxRemetente);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FormEnvioMensagem";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Envio de Mensagens";
